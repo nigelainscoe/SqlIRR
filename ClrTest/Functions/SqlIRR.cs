@@ -35,7 +35,7 @@ namespace ClrTest.Functions
         /// </value>
         private bool IsValidCashFlows
         {
-            //Cash flows for the first period must be positive
+            //Cash flows for the first period must be negative
             //There should be at least two cash flow periods         
             get
             {
@@ -44,7 +44,7 @@ namespace ClrTest.Functions
                 if (_cashFlows.Length < minNoCashFlowPeriods || (_cashFlows[0] > 0))
                 {
                     throw new ArgumentOutOfRangeException(
-                        $"Cash flow for the first period  must be negative and there should");
+                        $"Cash flow for the first period  must be negative and there should be at least two periods");
                 }
                 return true;
             }
