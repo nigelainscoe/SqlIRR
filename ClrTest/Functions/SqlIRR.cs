@@ -5,10 +5,18 @@ namespace ClrTest.Functions
 {
     public partial class IRR
     {
+        /// <summary>
+        /// Takes a string of values and returns the Internal rate of return.
+        /// </summary>
+        /// <param name="values">a NVARCHAR(MAX) string of numeric values in the form Internal rate of return.</param>
+        /// <returns>A value between 0 and 1 indicating the IRR of the financial series passed in.</returns>
+
         [Microsoft.SqlServer.Server.SqlFunction]
-        public static SqlDouble SqlIRR()
+
+        public static SqlDouble SqlIRR(string values)
         {
-            double[] cashFlows = { -70000, 12000, 15000, 18000, 21000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000, 26000 };
+            Array.ConvertAll(values.Split(','), double.Parse);
+            double[] cashFlows = Array.ConvertAll(values.Split(','), double.Parse);
             ICalculator calculator = new NewtonRaphsonIrrCalculator(cashFlows);
 
             return calculator.Execute();
