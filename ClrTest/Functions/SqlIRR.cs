@@ -27,13 +27,10 @@
 //  SELECT dbo.SqlIRR(@Revenues)
 
 
-
-
-
 using System;
 using System.Data.SqlTypes;
 
-namespace ClrTest.Functions
+namespace SqlCLR.Functions
 {
     // ReSharper disable once InconsistentNaming
     // ReSharper disable once UnusedMember.Global

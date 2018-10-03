@@ -12,8 +12,8 @@
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>ClrTest</RootNamespace>
-    <AssemblyName>ClrTest</AssemblyName>
+    <RootNamespace>SqlCLR</RootNamespace>
+    <AssemblyName>SqlCLR</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
