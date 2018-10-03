@@ -1,5 +1,4 @@
 # SqlIRR
-A SQL CLR project that enables IRR (Internal Rate of Return) calculations to be done in SQL Server, helping you to replace those pesky Excel Spreadsheets
 
 I assume that if you have got here you are looking for a way to calculate IRR from a T-SQL script or stored procedure. I also assume you are familiar with SQL Server Database Projects.
 
