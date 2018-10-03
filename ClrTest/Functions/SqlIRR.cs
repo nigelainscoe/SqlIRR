@@ -22,6 +22,14 @@
 // Boston, MA 02111-1307, USA.
 
 
+// SQL Usage:
+//  DECLARE @Revenues AS NVARCHAR(MAX) = '-3000, 1850, 1400, 1000'
+//  SELECT Finance.SqlIRR(@Revenues)
+
+
+
+
+
 using System;
 using System.Data.SqlTypes;
 
