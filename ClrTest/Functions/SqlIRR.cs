@@ -24,7 +24,7 @@
 
 // SQL Usage:
 //  DECLARE @Revenues AS NVARCHAR(MAX) = '-3000, 1850, 1400, 1000'
-//  SELECT Finance.SqlIRR(@Revenues)
+//  SELECT dbo.SqlIRR(@Revenues)
 
 
 
