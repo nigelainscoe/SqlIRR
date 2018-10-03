@@ -1,9 +1,35 @@
+// NewtonRaphsonIRRCalculator.cs - Calculate the Internal rate of return for a given set of cashflows.
+// Zainco Ltd
+//
+// See http://zainco.blogspot.com/2008/08/internal-rate-of-return-using-newton.html for background context
+//
+// Author: Joseph A. Nyirenda <joseph.nyirenda@gmail.com>
+//             Mai Kalange<code5p@yahoo.co.uk>
+// Copyright (c) 2008 Joseph A. Nyirenda, Mai Kalange, Zainco Ltd
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of version 2 of the GNU General Public
+// License as published by the Free Software Foundation.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+// General Public License for more details.
+//
+// You should have received a copy of the GNU General Public
+// License along with this program; if not, write to the
+// Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+// Boston, MA 02111-1307, USA.
+
+
 using System;
 using System.Data.SqlTypes;
 
 namespace ClrTest.Functions
 {
-    public partial class IRR
+    // ReSharper disable once InconsistentNaming
+    // ReSharper disable once UnusedMember.Global
+    public class IRR
     {
         /// <summary>
         /// Takes a string of values and returns the Internal rate of return.
@@ -13,6 +39,8 @@ namespace ClrTest.Functions
 
         [Microsoft.SqlServer.Server.SqlFunction]
 
+        // ReSharper disable once InconsistentNaming
+        // ReSharper disable once UnusedMember.Global
         public static SqlDouble SqlIRR(string values)
         {
             Array.ConvertAll(values.Split(','), double.Parse);
