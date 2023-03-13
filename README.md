@@ -32,3 +32,5 @@ GO
 ## 
 
 This project is heavily based on the work of Joseph A. Nyirenda and Mai Kalange. You can find more information about this at http://zainco.blogspot.com/2008/08/internal-rate-of-return-using-newton.html
+
+Since creating this I have learned how to import the Microsoft Visual Basic Finance library into SQL Server CLR functions and leverage their capability
